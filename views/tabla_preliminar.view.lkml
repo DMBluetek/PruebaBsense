@@ -39,4 +39,9 @@ view: tabla_preliminar {
     type: count
     drill_fields: []
   }
+  measure: total_alerta_AVG_RH {
+    type: number
+    value_format_name: percent_2
+    sql: ${avg_rh}) ;;
+  }
 }
