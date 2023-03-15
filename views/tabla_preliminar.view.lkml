@@ -30,8 +30,10 @@ view: tabla_preliminar {
       week,
       month,
       quarter,
-      year
+      year,
+      minute5
     ]
+    datatype: timestamp
     sql: ${TABLE}.TIME ;;
   }
 
@@ -39,9 +41,6 @@ view: tabla_preliminar {
     type: count
     drill_fields: []
   }
-  measure: average{
-    type:  average
-    sql: ${TABLE}.TIME ;;
-  }
+
 
 }
