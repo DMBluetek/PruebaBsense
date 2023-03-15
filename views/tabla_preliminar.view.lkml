@@ -39,9 +39,9 @@ view: tabla_preliminar {
     type: count
     drill_fields: []
   }
-
   measure: average{
     type:  average
     sql: ${TABLE}.TIME ;;
   }
+
 }
