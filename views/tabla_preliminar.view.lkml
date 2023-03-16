@@ -42,9 +42,27 @@ view: tabla_preliminar {
     drill_fields: []
   }
 
-  measure: avg5_pm10 {
+  measure: avgD_pm10 {
     type: average_distinct
     sql_distinct_key: ${time_time} ;;
     sql: ${avg_pm10};;
+  }
+
+  measure: avgD_pm1 {
+    type: average_distinct
+    sql_distinct_key: ${time_time} ;;
+    sql: ${avg_pm1};;
+  }
+
+  measure: avgD_pm2_5 {
+    type: average_distinct
+    sql_distinct_key: ${time_time} ;;
+    sql: ${avg_pm2_5};;
+  }
+
+  measure: avgD_rh {
+    type: average_distinct
+    sql_distinct_key: ${time_time} ;;
+    sql: ${avg_rh};;
   }
 }
