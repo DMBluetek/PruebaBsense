@@ -65,4 +65,14 @@ view: tabla_preliminar {
     sql_distinct_key: ${time_time} ;;
     sql: ${avg_rh};;
   }
+
+  dimension: tiempoRH {
+    type: tier
+    tiers: [0,39]
+    style: classic
+    sql: ${avg_rh} ;;
+
+  }
+
+
 }
