@@ -42,5 +42,9 @@ view: tabla_preliminar {
     drill_fields: []
   }
 
-
+  measure: avg5_pm10 {
+    type: average_distinct
+    sql_distinct_key: ${time_time} ;;
+    sql: ${avg_pm10};;
+  }
 }
