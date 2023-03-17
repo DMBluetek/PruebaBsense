@@ -73,6 +73,17 @@ view: tabla_preliminar {
     sql: ${avg_rh} ;;
 
   }
-
-
+  dimension: labelRH {
+    case: {
+      when: {
+        sql: ${avg_rh} <= 39;;
+        label: "Puro"
+      }
+      when: {
+        sql: ${avg_rh} > 39;;
+        label: "Contaminado"
+      }
+      else:"Unknown"
+    }
+  }
 }
